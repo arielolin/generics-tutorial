@@ -12,3 +12,10 @@ const HelloGenerics: React.FC<Props> = () => {
 
   return null;
 };
+
+interface FormProps<T> {
+  values: T;
+  children: (values: T) => JSX.Element;
+}
+
+https://www.youtube.com/watch?v=nViEqpgwxHE
